@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; /* space between grid sections */
+}
+.serviceBox {
+  color: #999;
+  background: linear-gradient(transparent 65%, #3088e2 65%);
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  padding: 0 15px 15px;
+  border-radius: 0px 0 150px 150px;
+  box-shadow: 0 18px 7px -7px rgba(0, 0, 0, 0.2);
+}
+.serviceBox .service-icon {
+  color: #fff;
+  background: #3088e2;
+  font-size: 50px;
+  height: 80px;
+  width: 85px;
+  line-height: 80px;
+  border-radius: 0 0 50px 50px;
+  margin: 0 auto 25px;
+}
+.serviceBox .service-content {
+  background: #fff;
+  padding: 0 20px 20px;
+  border-radius: 15px 15px 150px 150px;
+  border-top: 15px solid #3088e2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.serviceBox .title {
+  color: #3088e2;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 7px;
+}
+.serviceBox .description {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+.serviceBox .read-more {
+  color: #3088e2;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3 ease;
+}
+.serviceBox .read-more:hover {
+  color: #999;
+  border-bottom: 1px dashed #999;
+}
+.serviceBox.orange {
+  background: linear-gradient(transparent 65%, #fa5b0f 65%);
+}
+.serviceBox.orange .service-content {
+  border-top: 15px solid #fa5b0f;
+}
+.serviceBox.orange .service-icon {
+  background: #fa5b0f;
+}
+.serviceBox.pink {
+  background: linear-gradient(transparent 65%, #dc143c 65%);
+}
+.serviceBox.pink .service-content {
+  border-top: 15px solid #dc143c;
+}
+.serviceBox.pink .service-icon {
+  background: #dc143c;
+}
+@media only screen and (max-width: 992px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }  .serviceBox .service-content {
+    padding: 0 35px 35px;
+}
+@media only screen and (max-width:575px) {
+    .row {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .serviceBox .service-content {
+padding: 0 35px 35px;
+
+    }
+  }
